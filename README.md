@@ -1,5 +1,5 @@
-### 由于原先 deMemory 账号无法登录，deMemory 账号中的库不更新了
-### https://github.com/deMemory
+### 由于原先 de-memory 账号无法登录，de-memory 账号中的库不更新了
+### 新账号地址：https://github.com/deMemory
 
 <p align="center">
     <a href="https://packagist.org/packages/deMemory/dcat-media-selector">
