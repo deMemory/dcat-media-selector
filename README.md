@@ -24,7 +24,7 @@
 ### composer 安装
 
 ```
-composer require deMemory/dcat-media-selector
+composer require dememory/dcat-media-selector
 ```
 
 ### 后台发布
@@ -36,7 +36,7 @@ composer require deMemory/dcat-media-selector
 ### 执行该扩展迁移文件
 
 ```
-php artisan migrate --path=vendor/deMemory/dcat-media-selector/updates
+php artisan migrate --path=vendor/dememory/dcat-media-selector/updates
 ```
 
 ## 更新
