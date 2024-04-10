@@ -1,5 +1,5 @@
 {
-  "name": "deMemory/dcat-media-selector",
+  "name": "dcat/media-selector",
   "alias": "表单媒体选择器",
   "description": "表单媒体选择器",
   "type": "library",
