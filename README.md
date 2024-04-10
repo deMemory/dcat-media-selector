@@ -1,4 +1,5 @@
-# dcat-admin 表单媒体资源选择器
+### 由于原先 de-memory 账号无法登录，de-memory 账号中的库不更新了
+### https://github.com/de-memory
 
 <p align="center">
     <a href="https://packagist.org/packages/de-memory/dcat-media-selector">
@@ -143,17 +144,19 @@ php artisan migrate:rollback --path=vendor/de-memory/dcat-media-selector/updates
 ## 优化说明
 
 ```
+时间：2024-3-10
+
+迁移到新的账户
+部分代码优化
+```
+
+```
+时间：远古
 新增分组右键
-
 移除 dcat-media-selector:install 命令
-
 媒体选择类型移除blend选项
-
 type修改为types。参数由string修改为array
-
 媒体弹框由modal修改为layer.open
-
 移除英文翻译文件
-
 代码优化
 ```
