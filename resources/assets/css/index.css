@@ -1,0 +1,72 @@
+/*表单预览区*/
+.plupload-preview li {
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.plupload-preview a {
+    height: 95px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.media_selector_media_group {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.media_selector_media_group::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 5px;
+}
+
+.media_selector_media_group::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: skyblue;
+    background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+}
+
+.media_selector_media_group::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #ededed;
+    border-radius: 10px;
+}
+
+/*解决Table checkbox 不对齐*/
+.media_selector_table tr td:first-child {
+    padding-left: 0;
+}
+
+.modal_my_fa {
+    display: flex;
+    font-size: 85px;
+    justify-content: center;
+}
+
+.img-thumbnail {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+}
+
+/* 删除按钮、模态框行选择按钮*/
+.remove_media_display, .choose {
+    height: 22px;
+    padding: .125rem .25rem !important;
+    font-size: .75rem;
+    line-height: 1.5 !important;
+    border-radius: .15rem;
+}
+
