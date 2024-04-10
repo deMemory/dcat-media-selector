@@ -38,7 +38,7 @@ class DcatMediaSelectorServiceProvider extends ServiceProvider
 
         $lang = config('app.locale') === 'en' ? '' : str_replace('_', '-', config('app.locale'));
 
-        Admin::requireAssets(['@de-memory.dcat-media-selector', '@select2'], ['lang' => $lang]);
+        Admin::requireAssets(['@deMemory.dcat-media-selector', '@select2'], ['lang' => $lang]);
     }
 
     protected function registerPublishing()
@@ -48,7 +48,7 @@ class DcatMediaSelectorServiceProvider extends ServiceProvider
 //        $this->publishes([__DIR__ . '/../updates' => database_path('migrations')], 'dcat-media-selector-migrations');
 
         $this->publishes([
-            __DIR__ . '/../resources/assets' => public_path('vendor/dcat-admin-extensions/de-memory/dcat-media-selector')
+            __DIR__ . '/../resources/assets' => public_path('vendor/dcat-admin-extensions/deMemory/dcat-media-selector')
         ], 'dcat-media-selector-assets');
     }
 }

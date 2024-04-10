@@ -1,5 +1,5 @@
 {
-  "name": "de-memory/dcat-media-selector",
+  "name": "deMemory/dcat-media-selector",
   "alias": "表单媒体选择器",
   "description": "表单媒体选择器",
   "type": "library",
@@ -7,11 +7,11 @@
     "dcat-admin",
     "extension"
   ],
-  "homepage": "https://github.com/de-memory/dcat-media-selector",
+  "homepage": "https://github.com/deMemory/dcat-media-selector",
   "license": "MIT",
   "authors": [
     {
-      "name": "de-memory",
+      "name": "deMemory",
       "email": "972985083@qq.com"
     }
   ],

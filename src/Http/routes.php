@@ -5,7 +5,7 @@ use DeMemory\DcatMediaSelector\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('media-selector/table', function () {
-    return view('de-memory.dcat-media-selector::table');
+    return view('deMemory.dcat-media-selector::table');
 });
 
 Route::get('media-selector/m-list', MediaController::class . '@list');
