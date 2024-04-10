@@ -1,17 +1,17 @@
-### 由于原先 de-memory 账号无法登录，de-memory 账号中的库不更新了
-### https://github.com/de-memory
+### 由于原先 deMemory 账号无法登录，deMemory 账号中的库不更新了
+### https://github.com/deMemory
 
 <p align="center">
-    <a href="https://packagist.org/packages/de-memory/dcat-media-selector">
-        <img src="https://img.shields.io/packagist/dt/de-memory/dcat-media-selector.svg?color=" />
+    <a href="https://packagist.org/packages/deMemory/dcat-media-selector">
+        <img src="https://img.shields.io/packagist/dt/deMemory/dcat-media-selector.svg?color=" />
     </a> 
     <a><img src="https://img.shields.io/badge/php-7.1+-59a9f8.svg?style=flat" /></a> 
     <a><img src="https://img.shields.io/badge/laravel-7.29+-59a9f8.svg?style=flat" ></a>
 </p>
 
 
-![](https://raw.githubusercontent.com/de-memory/dcat-media-selector/master/1.png)
-![](https://raw.githubusercontent.com/de-memory/dcat-media-selector/master/2.png)
+![](https://raw.githubusercontent.com/deMemory/dcat-media-selector/master/1.png)
+![](https://raw.githubusercontent.com/deMemory/dcat-media-selector/master/2.png)
 
 ## 依赖
 
@@ -24,19 +24,19 @@
 ### composer 安装
 
 ```
-composer require de-memory/dcat-media-selector
+composer require deMemory/dcat-media-selector
 ```
 
 ### 后台发布
 
 ```
-开发工具=》扩展=》de-memory.dcat-media-selector=》启用
+开发工具=》扩展=》deMemory.dcat-media-selector=》启用
 ```
 
 ### 执行该扩展迁移文件
 
 ```
-php artisan migrate --path=vendor/de-memory/dcat-media-selector/updates
+php artisan migrate --path=vendor/deMemory/dcat-media-selector/updates
 ```
 
 ## 更新
@@ -138,7 +138,7 @@ https://learnku.com/docs/laravel/7.x/eloquent-mutators/7502#81e641
 ## 回滚该扩展迁移文件。(谨慎操作)
 
 ```
-php artisan migrate:rollback --path=vendor/de-memory/dcat-media-selector/updates
+php artisan migrate:rollback --path=vendor/deMemory/dcat-media-selector/updates
 ```
 
 ## 优化说明
