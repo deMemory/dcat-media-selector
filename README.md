@@ -2,8 +2,8 @@
 ### 新账号地址：https://github.com/deMemory
 
 <p align="center">
-    <a href="https://packagist.org/packages/deMemory/dcat-media-selector">
-        <img src="https://img.shields.io/packagist/dt/deMemory/dcat-media-selector.svg?color=" />
+    <a href="https://packagist.org/packages/dememory/dcat-media-selector">
+        <img src="https://img.shields.io/packagist/dt/dememory/dcat-media-selector.svg?color=" />
     </a> 
     <a><img src="https://img.shields.io/badge/php-7.1+-59a9f8.svg?style=flat" /></a> 
     <a><img src="https://img.shields.io/badge/laravel-7.29+-59a9f8.svg?style=flat" ></a>
