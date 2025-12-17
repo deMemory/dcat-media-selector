@@ -29,7 +29,10 @@ class CreateMediaTable extends Migration
             $table->index(['admin_id', 'media_group_id', 'type']);
         });
 
-        \DB::statement("alter table media comment '媒体'; ");
+        $databaseDefault = config('database.default');
+        $prefix = config("database.connections.{$databaseDefault}.prefix");
+        $tableName = $prefix ? "{$prefix}media" : "media";
+        \DB::statement("alter table {$tableName} comment '媒体'; ");
     }
 
     /**

@@ -21,7 +21,10 @@ class CreateMediaGroupTable extends Migration
             $table->integer('updated_at')->nullable()->comment("更新时间");
             $table->index(['admin_id']);
         });
-        \DB::statement("alter table media_group comment '媒体分组'; ");
+        $databaseDefault = config('database.default');
+        $prefix = config("database.connections.{$databaseDefault}.prefix");
+        $tableName = $prefix ? "{$prefix}media_group" : "media_group";
+        \DB::statement("alter table {$tableName} comment '媒体分组'; ");
     }
 
     /**
