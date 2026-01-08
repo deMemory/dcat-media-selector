@@ -13,11 +13,13 @@
             <div class="input-group-append">
                 <input type="file" style="display: none;" @if($limit > 1) multiple @endif >
 
-                <button type="button" class="btn btn-success btn-file mr-1">
-                    <i class="fa fa-folder-open"></i> 上传<span></span>
-                </button>
+                @if (!$isDisabled)
+                    <button type="button" class="btn btn-success btn-file mr-1">
+                        <i class="fa fa-folder-open"></i> 上传<span></span>
+                    </button>
 
-                <button type="button" class="btn btn-primary btn-file"><i class="fa fa-folder-open"></i> 选择</button>
+                    <button type="button" class="btn btn-primary btn-file"><i class="fa fa-folder-open"></i> 选择</button>
+                @endif
             </div>
         </div>
 

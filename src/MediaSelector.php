@@ -11,14 +11,14 @@ class MediaSelector extends Field
     protected $view = 'dcat-media-selector::index';
 
     protected static $selectList = [
-        'image'      => '图片',
-        'video'      => '视频',
-        'audio'      => '音频',
+        'image' => '图片',
+        'video' => '视频',
+        'audio' => '音频',
         'powerpoint' => '文稿',
-        'code'       => '代码',
-        'zip'        => '压缩包',
-        'text'       => '文本选择',
-        'other'      => '其它',
+        'code' => '代码',
+        'zip' => '压缩包',
+        'text' => '文本选择',
+        'other' => '其它',
     ];
 
     /*
@@ -93,13 +93,16 @@ class MediaSelector extends Field
 
         $types = isset($this->options['types']) && !empty($this->options['types']) ? $this->options['types'] : array_keys(self::$selectList);
 
+        $isDisabled = (bool)$this->getAttribute('disabled');
+
         $config = array_merge(
             [
+                'isDisabled' => $isDisabled,
                 'rootPath' => Storage::disk(config('admin.upload.disk'))->url(''),
-                'area'     => ['60%', '98%'],
-                'limit'    => $limit,
-                'move'     => json_encode(['dir' => 'media', 'fileNameIsEncrypt' => true]),
-                'types'    => $types,
+                'area' => ['60%', '98%'],
+                'limit' => $limit,
+                'move' => json_encode(['dir' => 'media', 'fileNameIsEncrypt' => true]),
+                'types' => $types,
                 'sortable' => true,
             ],
             $this->options
@@ -114,11 +117,14 @@ class MediaSelector extends Field
 
         $grouplist = MediaGroup::query()->pluck('name', 'id');
 
+
+
         $this->addVariables([
-            'limit'        => $limit,
-            'config'       => $config,
-            'grouplist'    => json_encode($grouplist),
-            'selectList'   => json_encode($selectList),
+            'limit' => $limit,
+            'isDisabled' => $isDisabled,
+            'config' => $config,
+            'grouplist' => json_encode($grouplist),
+            'selectList' => json_encode($selectList),
         ]);
 
         return parent::render();

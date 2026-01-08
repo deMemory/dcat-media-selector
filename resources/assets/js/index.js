@@ -102,9 +102,11 @@
             html += '<a href="' + data.data.url + '" title="' + data.data.name + '" target="_blank" class="thumbnail">';
             html += fileDisplayHtml({media_type: data.data.media_type, url: data.data.url});
             html += '</a>';
-            html += '<button type="button" class="btn btn-block btn-danger btn-xs remove_media_display">';
-            html += '<i class="fa fa-trash"></i>';
-            html += '</button>';
+            if (!config.isDisabled) {
+                html += '<button type="button" class="btn btn-block btn-danger btn-xs remove_media_display">';
+                html += '<i class="fa fa-trash"></i>';
+                html += '</button>';
+            }
             html += '</li>';
 
             if (config.limit === 1) {
