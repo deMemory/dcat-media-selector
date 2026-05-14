@@ -562,7 +562,7 @@
                 selectList = _this.options.selectList;
 
             var html = '<div class="col-9 col-sm-9">';
-            html += '<div class="media_selector_form border-bottom mb-1" style="display: none">';
+            html += '<div class="media_selector_form border-bottom mb-1">';
             html += '<div class="row">';
             html += '<div class="filter-input col-sm-3">';
             html += '<div class="form-group">';
