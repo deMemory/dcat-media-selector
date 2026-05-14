@@ -48,7 +48,7 @@ class MediaController
                 'media_group_name' => $value->mediaGroup->name ?? '无',
                 'media_type'       => $value->type,
                 'path'             => $value->path,
-                'url'              => Storage::disk(config('admin.upload.disk'))->url($value->path),
+                'url'              => self::mediaPublicUrl($value->path),
                 'size'             => FileUtil::formatBytes($value->size),
                 'file_ext'         => $value->file_ext,
                 'name'             => $value->file_name,
@@ -147,6 +147,16 @@ class MediaController
             ->update(['media_group_id' => $request->get('group_id')]);
 
         return $this->success(true);
+    }
+
+    private static function mediaPublicUrl(?string $path): string
+    {
+        $path = (string) $path;
+        if ($path !== '' && (str_starts_with($path, 'http://') || str_starts_with($path, 'https://'))) {
+            return $path;
+        }
+
+        return Storage::disk(config('admin.upload.disk'))->url($path);
     }
 
     private function _getFileName($file, $isEncrypt)
